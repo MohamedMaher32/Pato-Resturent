@@ -1,0 +1,124 @@
+/* start home media */
+@media screen and (max-width:991px) and (min-width:768px){
+    .navbar .collapse .navbar-nav .nav-item{
+        margin-left: 12px !important;
+    }
+}
+@media screen and (max-width:767px){
+    .navbar-toggler{
+       border: 2px solid #fff;
+       position: relative;
+    }
+    .navbar-collapse{
+        background-color: #eae6e6 ;
+        position: absolute;
+        top: 80px;
+        right: 13px;
+        left: 13px;
+        z-index: 1000;
+        transition: all 0.5s;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    .navbar-collapse .navbar-nav .nav-item{
+        margin-left: 15px !important;
+    }
+    .navbar-collapse .navbar-nav .nav-item .nav-link {
+        color: var(--main-color) !important;
+        margin: 5px 15px 5px 0;
+        transition: all 0.5s;
+        border-bottom: 2px solid var(--main-color);
+        text-align: center;
+    }
+    .navbar-collapse .navbar-nav .nav-item .nav-link:hover{
+        padding-left: 1rem;
+        color: #111 !important;
+    }
+    .home .text h1{
+        font-size: 65px !important;
+    }
+}
+/* end home media */
+/* ********************************************************/
+/* start about media */
+@media screen and (max-width:575px) {
+   .row .our , .sign .row .sign-up{
+        text-align: center;
+    }
+}
+/* end about media */
+/* ********************************************************/
+/* start about media */
+@media screen and (max-width:767px) {
+    .menu .row .drink {
+        margin-top: 29px;
+    }
+}
+@media screen and (max-width:575px) {
+    .menu .row .food{
+        width: 100%;
+        margin-top: 29px;
+    }
+}
+/* end about media */
+/* ********************************************************/
+/* start event media */
+@media screen and (max-width:1199px) and (min-width:992px){
+    .event .row p {
+        font-size: 15px;
+    }
+    .event .row img{
+        height: 100%;
+    }
+    .event .carousel-inner .carousel-item .row .photo::after{
+        width: 83%;
+        left: -34%;
+        padding-right: 25px;
+    }
+}
+@media screen and (max-width:991px) {
+    .event .carousel-inner .carousel-item .row .photo::after{
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+}
+@media screen and (max-width:575px) {
+    .event .carousel-inner .carousel-item .row .txt .feature {
+        width: 50%;
+    }
+    .event .carousel-inner .carousel-item .row .txt h5 {
+        font-size: 20px;
+    }
+}
+/* end event media */
+/* ********************************************************/
+/* start booking media */
+@media screen and (max-width:575px) {
+    .booking .row form .name {
+        margin-top: 20px;
+    }
+}
+/* end booking media */
+/* ********************************************************/
+/* start chef media */
+@media screen and (max-width:991px) {
+    .chef .row .foto img{
+        width: 25% !important;
+    }
+}
+/* end chef media */
+/* ********************************************************/
+/* start signin media */
+@media screen and (max-width:575px) {
+    .sigin .row{
+        text-align: center;
+    }
+    .sigin .row .form-sign{
+        margin: 20px 0;
+    }
+}
+/* end siginin media */
+/* ********************************************************/

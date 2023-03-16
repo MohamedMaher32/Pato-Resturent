@@ -1,0 +1,389 @@
+/*  start main rules */
+:root{
+    --main-color: #ec1d25;
+}
+.main-bg{
+    background-color: var(--main-color);
+    transition: background-color 0.5s;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+::-webkit-scrollbar-track {
+    background-color: #ccc;
+}
+.arrow-up{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 100000;
+    background-color: var(--main-color);
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+.arrow-up i{
+    transform: translate(-50%, -50%);
+    left: 50%;
+    position: relative;
+    top: 50%;
+    font-size: 20px;
+}
+.landing{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: url(../image/pattern1.png);
+    z-index: 10000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    background-image:
+      linear-gradient(var(--main-color) 16px, transparent 0) ,
+      linear-gradient(var(--main-color) 16px, transparent 0) ,
+      linear-gradient(var(--main-color) 16px, transparent 0) ,
+      linear-gradient(var(--main-color) 16px, transparent 0);
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: left top , left bottom , right top , right bottom;
+    animation: rotate 1s linear infinite;
+  }
+  @keyframes rotate {
+    0% {
+      width: 64px;
+      height: 64px;
+      transform: rotate(0deg)
+    }
+    50% {
+      width: 30px;
+      height: 30px;
+      transform: rotate(180deg)
+    }
+    100% {
+      width: 64px;
+      height: 64px;
+      transform: rotate(360deg)
+    }
+  }       
+@font-face {
+    font-family: 'poppins-bold';
+    src: url(../webfonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: 'poppins-light' ;
+    src: url(../webfonts/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: 'poppins-exlight' ;
+    src: url(../webfonts/Poppins-ExtraLight.ttf);
+}
+@font-face {
+    font-family: 'poppins-medium' ;
+    src: url(../webfonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: 'poppins-regular' ;
+    src: url(../webfonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'Courgette';
+    src: url(../webfonts/Courgette-Regular.ttf);
+}
+/* end main rules */
+/* ******************************************************** */
+/* start home */
+.home{
+    background-image: url(../image/home.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-top: 5px solid var(--main-color);
+}
+.navbar .collapse .navbar-nav{
+    font-size: 16px ;
+}
+.navbar .collapse .navbar-nav .nav-item{
+    margin-left: 40px;
+}
+.navbar .collapse .navbar-nav .nav-link{
+    text-transform: uppercase;
+    font-family: 'poppins-light' ;
+    font-weight: 100;
+    color: #fff;
+    transition: all 1s;
+}
+.navbar .collapse .navbar-nav .active ,
+.home .navbar-nav .nav-item:hover .nav-link 
+ {
+    color: var(--main-color);
+}
+.home .text{
+    top: 40px;
+}
+.home .text h2{
+    font-family: 'Courgette';
+    font-size: 70px;
+    line-height: 1.1;
+}
+.home .text h1{
+    font-family: 'Poppins-bold';
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+}
+.btn{
+    font-family: 'Poppins-light';
+    font-weight: 100;
+    text-transform: uppercase;
+    color: var(--main-color);
+    transition: all 1s;
+}
+.btn:hover{
+    color: #fff;
+    background-color: var(--main-color) !important;
+}
+/* end home */
+/* ********************************************************************************** */
+/* start welcome */
+h4{
+    font-family: 'Courgette';
+    font-size: 30px;
+    line-height: 1.2;
+    color: var(--main-color);
+    text-transform: capitalize;
+}
+h3{
+    font-family: 'Poppins-bold';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+.row p , .row a{
+    font-family: 'poppins-light';
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 1.7;
+}
+.row a{
+    transition: all 1s;
+    text-transform: uppercase;
+}
+.row a:hover{
+    color: var(--main-color) !important;
+}
+/* end welcome */
+/* ********************************************************************************** */
+/* start discover */
+.discover{
+    background-image: url(../image/discover.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+/* end discover */
+/* ********************************************************************************** */
+/* start about */
+.about .row h5 {
+    font-family: 'poppins-medium';
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.about .row img{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.about .row .image:hover img{
+    transform: scale(1.1);
+}
+/* end about */
+/* ********************************************************************************** */
+/* start menu */
+.menu .row .image::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 150px;
+    height: 60px;
+    background-color: rgba(255, 255, 255,0.9);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.menu .row .image::before{
+    content: "lunch";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: #000;
+    font-family: 'Poppins-medium';
+    font-weight: 500;
+    font-size: 22px;
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    z-index: 1000;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.menu .row .dinner::before{
+    content: "dinner";
+}
+.drink{
+    margin-bottom: 29px;
+}
+.margin-top-col{
+    margin-top: 29px;
+}
+.menu .row .drink::before{
+    content: "drink";
+}
+.menu .row .starters::before{
+    content: "starters";
+}
+.menu .row .happy::after{
+    width: 225px;
+}
+.menu .row .happy::before{
+    content: "happy hour";
+}
+.menu .row .dessert::before{
+    content: "dessert";
+}
+.menu .row .image{
+    cursor: pointer;
+}
+.menu .row .image img{
+    transition: transform 0.5s;
+}
+.menu .row .image:hover img{
+    transform: scale(1.1);
+}
+.menu .row .image:hover::after {
+    background-color: var(--main-color) !important;
+}
+.menu .row .image:hover::before{
+    color: #fff;
+}
+.modal-body{
+    padding: 0;
+}
+/* end menu */
+/* ********************************************************************************** */
+/* start event */
+.event{
+    background-image: url(../image/bg-event.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+.event .row h3{
+    letter-spacing: normal;
+    color: var(--main-color);
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px ;
+    height: 10px ;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+}
+.carousel-indicators .active{
+    background-color: var(--main-color);
+}
+.event .row .photo::after{
+    content: "08:00 PM Tuesday - 21 March 2023";
+    width: 70%;
+    height: 50px;
+    background-color:  rgba(236, 29, 37,0.9);;
+    color: #fff;
+    position: absolute;
+    top: 173px;
+    left: -29%;
+    transform: rotate(90deg);
+    padding-top: 12px;
+    font-family: 'poppins-light';
+    font-weight: 100;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+/* end event */
+/* ********************************************************************************** */
+/* start booking */
+.row .form-control , .booking .row .form-select{
+    height: 50px;
+    border: 2px solid #d9d9d9;
+}
+.row .form-control:focus , .booking .row .form-select:focus{
+    box-shadow: 0 0 0 2px var(--main-color);
+    border: none;
+}
+.row .form-label{
+    font-family: 'poppins-light';;
+    font-weight: 100;
+    font-size: 15px;
+    color: #555555;
+}
+/* end booking */
+/* ********************************************************************************** */
+/* start chef  */
+.chef .row .foto img{
+    margin-top: 5px;
+    width: 15%;
+    box-shadow: 0 0 0 4px var(--main-color);
+}
+.chef .row .text .main-p{
+    font-size: 18px;
+}
+.chef .row .text .secound-p{
+    font-family: 'poppins-regular' ;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.chef .row .text .icon{
+    color: var(--main-color);
+}
+/* end chef  */
+/* *********************************************************************************/
+/* start footer  */
+.footer .row h5{
+    font-size: 17px;
+}
+.footer .row p , .footer .row a{
+    font-size: 13px;
+}
+.footer .row a{
+    color: var(--main-color);
+}
+.footer .copyright{
+    background-color: #111111;
+}
+.footer .copyright .copy {
+    font-size: 14px;
+}
+.footer .copyright .icons i{
+    font-size: 18px;
+}
+/* end footer  */
+/* *********************************************************************************/
