@@ -34,16 +34,16 @@ $(window).ready(function(){
     wow = new WOW({offset: 150,})
     wow.init();
     // event watch
-    $(".day").countdown("2023/05/01", function(event) {
+    $(".day").countdown("2023/12/01", function(event) {
       $(this).text(event.strftime('%D'));
     });
-    $(".hour").countdown("2023/05/01", function(event) {
+    $(".hour").countdown("2023/12/01", function(event) {
       $(this).text(event.strftime('%H'));
     });
-    $(".minute").countdown("2023/05/01", function(event) {
+    $(".minute").countdown("2023/12/01", function(event) {
       $(this).text(event.strftime('%M'));
     });
-    $(".second").countdown("2023/05/01", function(event) {
+    $(".second").countdown("2023/12/01", function(event) {
       $(this).text(event.strftime('%S'));
     });
 })
